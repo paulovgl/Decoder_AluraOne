@@ -1,0 +1,291 @@
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/Inter.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #f3f5fc;
+}
+
+/* Mobile Screen */
+.container {
+  padding: 16px;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 56px;
+  padding: 24px 0px;
+}
+
+.input-txt {
+  width: 100%;
+  height: 251px;
+  resize: none;
+  border: none;
+  font-size: 32px;
+  color: #0a3871;
+  background-color: #f3f5fc;
+}
+
+.input-txt:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.input-txt::placeholder {
+  color: #0a3871;
+}
+
+.warning-field {
+  display: flex;
+  height: 18px;
+  align-items: center;
+}
+
+.warning-text {
+  display: inline;
+  margin-left: 8px;
+}
+
+.button-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  height: 158px;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.button-field button {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 24px;
+  height: 67px;
+  cursor: pointer;
+}
+
+.button-cript {
+  background: #0a3871;
+  color: white;
+  border: none;
+}
+
+.button-cript:hover {
+  background: #072b61;
+}
+
+.button-descript {
+  background: white;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+}
+
+.button-descript:hover {
+  background: #eff1fa;
+}
+
+.output-field {
+  padding: 32px;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  background-color: white;
+}
+
+.output-empty {
+  text-align: center;
+}
+
+.output-img {
+  display: none;
+}
+
+.output-empty h1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #343a40;
+  margin-bottom: 16px;
+}
+
+.output-empty p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #495057;
+}
+
+.output-area {
+  display: none;
+  text-align: center;
+}
+
+.output-result {
+  display: block;
+  width: 100%;
+  height: 432px;
+  resize: none;
+  border: none;
+  font-size: 36px;
+  margin-bottom: 32px;
+  color: #0a3871;
+  background-color: white;
+}
+
+.output-result:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.output-button {
+  width: 100%;
+  height: 67px;
+  font-size: 16px;
+  border-radius: 24px;
+  cursor: pointer;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+  background-color: white;
+}
+
+.output-button:hover {
+  background: #eff1fa;
+}
+
+footer {
+  background-color: #356EA9;
+}
+
+.rodape-field {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.rodape-who {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rodape-links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rodape-links a {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.rodape-links a img {
+  fill: white;
+}
+
+/* Tablet Screen */
+@media (min-width: 768px) {
+  .container {
+    padding: 40px;
+  }
+
+  .input-txt {
+    height: 596px;
+  }
+
+  .button-field {
+    flex-direction: row;
+    height: fit-content;
+  }
+
+  .button-field button {
+    width: 48%;
+  }
+
+  .output-img {
+    display: none;
+  }
+
+  .output-result {
+    height: 180px;
+  }
+}
+
+/* Desktop Screen */
+@media (min-width: 1080px) {
+  .container {
+    padding: 40px;
+  }
+
+  header {
+    width: fit-content;
+  }
+
+  .logo {
+    display: inline;
+    margin-bottom: 80px;
+    padding: 0px;
+  }
+
+  main {
+    display: flex;
+    height: calc(100vh - 212px);
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input-field {
+    width: 70%;
+    padding-left: 80px;
+  }
+
+  .input-txt {
+    height: calc(100vh - 345px);
+  }
+
+  .button-field {
+    margin-bottom: 0px;
+  }
+
+  .output-field {
+    width: 25%;
+    margin-top: -132px;
+  }
+
+  .output-empty {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .output-img {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .output-area {
+    height: 100%;
+  }
+
+  .output-result {
+    height: calc(100vh - 240px);
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Links Css's-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Decoder</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img src="./assets/Logo.svg" alt="" class="logo" />
+      </header>
+      <main>
+        <div class="input-field">
+          <textarea
+            placeholder="Digite seu texto"
+            class="input-txt"
+            id="input-txt"
+          ></textarea>
+          <div class="warning-field">
+            <img src="./assets/warning.svg" class="warning-img" />
+            <p class="warning-text">Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <div class="button-field">
+            <button class="button-cript" id="button-cript">Criptografar</button>
+            <button class="button-descript" id="button-descript">
+              Descriptografar
+            </button>
+          </div>
+        </div>
+        <div class="output-field">
+          <div class="output-empty" id="output-empty">
+            <img src="./assets/mensagem_img.svg" class="output-img" />
+            <h1>Nenhuma mensagem encontrada</h1>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
+          <div class="output-area" id="output-area">
+            <textarea class="output-result" id="output-result"></textarea>
+            <button class="output-button" id="output-button">Copiar</button>
+          </div>
+        </div>
+      </main>
+      <script src="./js/script.js"></script>
+    </div>
+    <footer>
+      <div class="rodape-field">
+        <p class="rodape-who">Desenvolvido com &#128153; por Paulo Victor</p>
+        <div class="rodape-links">
+          <a
+            href="https://www.linkedin.com/in/paulovgl/"
+            target="_blank"
+            class="rodape-linkedin"
+          >
+            <img src="./assets/linkedin_icon.svg" />
+            <p>Linkedin</p>
+          </a>
+          <a
+            href="https://github.com/paulovgl"
+            target="_blank"
+            class="rodape-github"
+          >
+            <img src="./assets/github_icon.svg" />
+            <p>GitHub</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
