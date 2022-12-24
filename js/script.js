@@ -92,6 +92,7 @@ function ShowOutput() {
 
 function HideOutput() {
   outputEmpty.style.display = "flex";
+  outputEmpty.style.flexDirection = "column"
   outputArea.style.display = "none";
 }
 
